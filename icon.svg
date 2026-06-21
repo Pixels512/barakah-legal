@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-label="Barakah">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0e6b59"/>
+      <stop offset="1" stop-color="#0a4a3e"/>
+    </linearGradient>
+    <mask id="crescent">
+      <rect width="1024" height="1024" fill="black"/>
+      <circle cx="470" cy="512" r="300" fill="white"/>
+      <circle cx="560" cy="470" r="272" fill="black"/>
+    </mask>
+  </defs>
+  <rect width="1024" height="1024" fill="url(#bg)"/>
+  <rect width="1024" height="1024" fill="#ffffff" mask="url(#crescent)"/>
+  <path fill="#c9a227" d="M665,350 L681.46,397.35 L731.58,398.37 L691.63,428.65 L706.15,476.63 L665,448 L623.85,476.63 L638.37,428.65 L598.42,398.37 L648.54,397.35 Z"/>
+</svg>
