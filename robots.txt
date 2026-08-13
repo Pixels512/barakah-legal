@@ -1,0 +1,4 @@
+Sitemap: https://pixels512.github.io/barakah-legal/sitemap.xml
+
+User-agent: *
+Allow: /
