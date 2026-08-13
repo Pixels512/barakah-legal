@@ -16,18 +16,38 @@
   </head>
   <body>
     <h1>Barakah — Privacy Policy</h1>
-    <p class="updated">Effective date: 21 June 2026</p>
+    <p class="updated">Effective date: 9 August 2026</p>
 
-    <p>Barakah is built to be private by design. We do not collect, store, transmit, or sell your personal data.</p>
+    <p>Barakah is built to be private by design. We have no account system, no analytics and no tracking SDKs, and we do not collect, store or sell your personal data. Barakah sends nothing to any server we operate. A small number of features you explicitly invoke do contact third-party services; each one is listed under &ldquo;When something does leave your device&rdquo; below and in the app under More &rarr; Privacy Report.</p>
 
     <h2>What we collect</h2>
     <p><strong>Nothing.</strong> Barakah has no account system and no analytics or tracking SDKs. Everything you enter (calculator inputs, tasbih counts, preferences) is stored only on your device.</p>
+    <p>To make product quality measurable without remote analytics, Barakah keeps coarse aggregate counters on your device: the UTC day, an allow-listed event kind (such as onboarding completed, share hand-off, or review prompt requested), and a count. These counters contain no identifier, location, worship content, search history, or free text; only a rolling 90-calendar-day window is retained; and they are excluded from portable backup. No app code sends them off-device. They leave only when you explicitly export them under More &rarr; Privacy Report, where you can also erase them.</p>
 
     <h2>Location</h2>
-    <p>If you choose to share your location, it is used <strong>only on your device</strong> to calculate prayer times and the Qibla direction. Your location is never transmitted to us or to any third party, and it is not stored beyond the current calculation.</p>
+    <p>If you choose to share your location, it is used <strong>only on your device</strong> to calculate prayer times and the Qibla direction, and it is never transmitted to us — we operate no server and receive nothing. The city you choose is saved on your device (in local storage) so the app can remember it next time.</p>
+    <p><strong>One exception, and only when you ask for it:</strong> if you tap to search for nearby mosques, your <em>approximate</em> area — rounded to about one kilometre, never your precise position — is sent to the open mapping service Overpass (overpass-api.de) to answer that one query. Nothing about you is attached to it and we never receive it. Similarly, tapping &ldquo;directions&rdquo; hands the mosque&rsquo;s coordinates to your own maps app (Apple or Google Maps), after which their privacy policy applies rather than ours. You can clear your saved location and every other locally stored value at any time from More &rarr; Clear all local data.</p>
 
     <h2>Calculations</h2>
-    <p>All prayer-time, Qibla, Hijri, Zakat, inheritance, and tasbih calculations run entirely on your device. No data leaves your phone to perform them.</p>
+    <p>All prayer-time, Qibla, Hijri, Zakat, inheritance, and tasbih calculations run entirely on your device, offline. No data leaves your phone to perform them.</p>
+
+    <h2>When something does leave your device</h2>
+    <p>These are the only cases, and each happens solely because you chose it:</p>
+    <ul>
+      <li><strong>Nearby mosque search</strong> &mdash; your approximate area (~1&nbsp;km) is sent to overpass-api.de when you tap to search.</li>
+      <li><strong>Directions, licence and attribution links</strong> &mdash; opening one hands the request to your maps app or browser (Apple/Google Maps, Wikimedia Commons).</li>
+      <li><strong>Qur&rsquo;an, dua and adhan audio</strong> &mdash; streamed or downloaded on request from everyayah.com and Wikimedia Commons.</li>
+      <li><strong>Word-by-word Qur&rsquo;an data</strong> &mdash; fetched from quran.com&rsquo;s open API only if you switch that feature on.</li>
+      <li><strong>Recitation self-check</strong> &mdash; if you turn it on and accept the separate consent prompt, your voice is sent to the platform&rsquo;s speech-recognition service while you recite.</li>
+      <li><strong>Android System WebView</strong> &mdash; Android itself may contact Google&rsquo;s autofill servers from inside the app&rsquo;s process. This is not Barakah&rsquo;s code and we cannot switch it off; setting Android Settings &rarr; Autofill service to &ldquo;None&rdquo; stops it.</li>
+    </ul>
+    <p>None of these send anything to us &mdash; we operate no server &mdash; and none of them carries an account, identifier or profile, because we have none to attach. They are still ordinary internet requests, though, so the service on the other end necessarily sees your IP address and what you asked for (which surah, which audio file, which area). An IP address can be an online identifier under GDPR, so we say so plainly rather than describing these calls as carrying &ldquo;nothing about you&rdquo;. Each one happens only when you choose the feature that makes it.</p>
+
+    <h2>Your control over stored data</h2>
+    <p>Everything Barakah saves — your location, calculation settings, Zakat and inheritance inputs, journal entries, bookmarks, tasbih counts, streaks, diagnostics, and coarse local measurement counters — lives only in your device's local storage. You can permanently delete all of it at any time using "Clear all local data" in the More tab; this does not require contacting us, since we never had a copy to begin with.</p>
+
+    <h2>Optional app lock</h2>
+    <p>More → "Require a passcode to open Barakah" lets you add a numeric passcode gate on top of your device's own screen lock, so a menstruation-tracking or journal entry left on-screen isn't readable by anyone who briefly picks up an unlocked phone. Only a salted hash of the passcode is stored on your device (the passcode itself is never written to storage or sent anywhere); there is no cloud recovery, so forgetting the passcode requires erasing local app data via the same "forgot passcode" screen. Because the underlying data itself is never encrypted at rest — only gated behind this in-app screen — this is a UX-level deterrent against casual/shoulder-surf access, not a substitute for your device's own encryption and screen lock.</p>
 
     <h2>Children</h2>
     <p>Barakah does not collect data from anyone, including children, and is suitable for all ages.</p>
@@ -40,7 +60,7 @@
 
     <div class="ar">
       <h2>سياسة الخصوصية</h2>
-      <p>تطبيق بركة مُصمَّم للخصوصية. نحن لا نجمع أو نخزّن أو نرسل أو نبيع بياناتك الشخصية. كل ما تُدخله يُحفظ على جهازك فقط، ولا يوجد حساب ولا تتبّع. عند مشاركة موقعك، يُستخدم على جهازك فقط لحساب مواقيت الصلاة والقبلة، ولا يُرسل إلى أي جهة. للاستفسار: <a href="mailto:suasion.78.hymn@icloud.com">suasion.78.hymn@icloud.com</a></p>
+      <p>تطبيق بركة مُصمَّم للخصوصية. نحن لا نجمع أو نخزّن أو نبيع بياناتك الشخصية، ولا نُشغّل أي خادم يستقبل بياناتك. كل ما تُدخله يُحفظ على جهازك فقط، ولا يوجد حساب ولا تتبّع. يحفظ التطبيق على جهازك أيضًا عدادات إجمالية محدودة (يوم الحدث ونوعه وعدده فقط) لقياس التفعيل والمشاركة وطلب التقييم؛ بلا هوية أو موقع أو محتوى عبادة، وتُحذف الأيام الأقدم من ٩٠ يومًا، ولا تُرسَل هذه العدادات أبدًا. يمكنك عرضها أو تصديرها أو مسحها من «المزيد ← تقرير الخصوصية». عند مشاركة موقعك، يُستخدم على جهازك فقط لحساب مواقيت الصلاة والقبلة، ولا يصلنا نحن أبدًا؛ يُحفظ اسم المدينة التي تختارها على جهازك فقط ليتذكّره التطبيق في المرة القادمة. والاستثناء الوحيد — وفقط عند طلبك — هو البحث عن المساجد القريبة: تُرسَل حينها منطقتك التقريبية (مُقرَّبة إلى نحو كيلومتر واحد، وليس موقعك الدقيق) إلى خدمة الخرائط المفتوحة Overpass للإجابة على ذلك الاستعلام وحده. كذلك يُرسَل الصوت والبيانات التي تطلبها (تلاوات، أذان، ترجمة كلمة بكلمة) من خوادم عامة، وتفاصيل ذلك كلها في «المزيد ← تقرير الخصوصية». يمكنك في أي وقت مسح موقعك المحفوظ وكل بيانات أخرى محفوظة محليًا من صفحة «المزيد ← مسح جميع البيانات المحلية». يمكنك أيضًا تفعيل رمز دخول اختياري («المزيد ← طلب رمز الدخول لفتح بركة») لإضافة قفل إضافي فوق قفل الشاشة؛ يُحفظ فقط بصمة مشفَّرة (hash) لهذا الرمز على جهازك، ولا يوجد استرجاع سحابي له. للاستفسار: <a href="mailto:suasion.78.hymn@icloud.com">suasion.78.hymn@icloud.com</a></p>
     </div>
   </body>
 </html>
