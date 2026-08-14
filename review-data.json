@@ -1,0 +1,70 @@
+{
+  "$schema_note": "Aggregate counts behind the claims on no-ads.html. Competitor apps are anonymised as App A-E: the finding is about how ad funding behaves, not about naming rivals.",
+  "source": "Apple public customer-review RSS feed (itunes.apple.com/{country}/rss/customerreviews)",
+  "pulled_at": "2026-08-13",
+  "storefronts": [
+    "ae",
+    "ca",
+    "dz",
+    "eg",
+    "fr",
+    "gb",
+    "id",
+    "ma",
+    "my",
+    "pk",
+    "sa",
+    "us"
+  ],
+  "population_cap": "Apple returns recent reviews first and caps at roughly 10 pages per storefront per app. This is a recent-weighted retrievable sample, not a census.",
+  "counting_rule_ads": "/\\bads\\b|\\bad\\b|advertis|paywall|اعلانات|إعلانات|too many ad/i",
+  "counting_rule_ad_content": "a review must match BOTH the advertising vocabulary above AND a specific objectionable-content term: /indecent|inappropriate|nudity|naked|immodest|obscene|gambling|music ad|half.?naked|women exposed/i",
+  "totals": {
+    "reviews": 14057,
+    "one_and_two_star": 1985,
+    "ads_mentions_in_low": 867
+  },
+  "per_app": [
+    {
+      "app": "App A",
+      "reviews": 5552,
+      "low": 1223,
+      "ads": 618,
+      "adsPct": 51,
+      "dignity": 63
+    },
+    {
+      "app": "App B",
+      "reviews": 3322,
+      "low": 378,
+      "ads": 187,
+      "adsPct": 49,
+      "dignity": 3
+    },
+    {
+      "app": "App C",
+      "reviews": 803,
+      "low": 98,
+      "ads": 61,
+      "adsPct": 62,
+      "dignity": 7
+    },
+    {
+      "app": "App D",
+      "reviews": 3496,
+      "low": 233,
+      "ads": 0,
+      "adsPct": 0,
+      "dignity": 0
+    },
+    {
+      "app": "App E",
+      "reviews": 884,
+      "low": 53,
+      "ads": 1,
+      "adsPct": 2,
+      "dignity": 0
+    }
+  ],
+  "caveat": "A keyword mention is evidence a review RAISES a topic, not proof it is the sole cause of the rating. Two of the five apps show almost no advertising complaints; the pattern is concentrated in the ad-funded ones."
+}
