@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hijri Date Today &amp; Hijri–Gregorian Converter — Barakah</title>
+    <meta
+      name="description"
+      content="Today's Hijri date and a free Hijri to Gregorian date converter using the Umm al-Qura calendar — the same calculation the Barakah iPhone app runs. Works in your browser, no account."
+    />
+    <link rel="canonical" href="https://pixels512.github.io/barakah-legal/hijri.html" />
+    <link rel="alternate" hreflang="en" href="https://pixels512.github.io/barakah-legal/hijri.html" />
+    <link rel="alternate" hreflang="ar" href="https://pixels512.github.io/barakah-legal/ar/hijri.html" />
+    <link rel="alternate" hreflang="x-default" href="https://pixels512.github.io/barakah-legal/hijri.html" />
+    <link rel="icon" href="icon.svg" type="image/svg+xml" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Barakah" />
+    <meta property="og:title" content="Hijri Date Today &amp; Hijri–Gregorian Converter" />
+    <meta
+      property="og:description"
+      content="Today's Hijri date and a two-way Hijri–Gregorian converter on the Umm al-Qura calendar, computed in your browser."
+    />
+    <meta property="og:url" content="https://pixels512.github.io/barakah-legal/hijri.html" />
+    <meta property="og:image" content="https://pixels512.github.io/barakah-legal/og-barakah.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="The Barakah app icon beside the words Prayer times, Qibla and more" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="ar_SA" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="apple-itunes-app" content="app-id=6782983180" />
+    <style>
+      :root { --brand: #0b5d4e; }
+      body { font-family: system-ui, -apple-system, 'Segoe UI', sans-serif; max-width: 760px; margin: 0 auto; padding: 32px 20px 64px; color: #14201c; line-height: 1.6; }
+      h1, h2 { color: var(--brand); }
+      h1 { border-bottom: 3px solid var(--brand); padding-bottom: 8px; }
+      a { color: var(--brand); }
+      .today { background: #f2f7f5; border: 1px solid #dfe5e1; border-radius: 12px; padding: 18px 20px; text-align: center; margin: 20px 0; }
+      .today .hijri { font-size: 28px; font-weight: 700; color: var(--brand); }
+      .today .greg { color: #5d6b66; font-size: 15px; margin-top: 4px; }
+      .tool { border: 1px solid #dfe5e1; border-radius: 12px; padding: 16px 18px; margin: 16px 0; }
+      .tool label { display: block; font-weight: 600; margin: 8px 0 4px; }
+      .tool input, .tool select { font-size: 16px; padding: 8px 10px; border: 1px solid #b9c4bf; border-radius: 8px; box-sizing: border-box; }
+      .tool input[type="number"] { width: 90px; }
+      .row { display: flex; flex-wrap: wrap; gap: 10px; align-items: flex-end; }
+      .tool button { background: var(--brand); color: #fff; border: 0; font-size: 16px; font-weight: 600; padding: 10px 18px; border-radius: 8px; min-height: 44px; cursor: pointer; }
+      .tool button:hover, .tool button:focus { background: #094c40; }
+      .tool button:focus-visible { outline: 3px solid #0e6b59; outline-offset: 3px; }
+      .out { font-size: 20px; font-weight: 700; color: var(--brand); margin-top: 10px; min-height: 28px; }
+      .method { background: #f7faf9; border: 1px solid #dfe5e1; border-radius: 10px; padding: 14px 16px; font-size: 14px; color: #3d4a46; }
+      .cta { display: flex; justify-content: center; margin: 28px 0 8px; }
+      .cta a { display: inline-block; background: var(--brand); color: #fff; text-decoration: none; font-size: 17px; font-weight: 600; padding: 14px 28px; border-radius: 12px; min-height: 44px; box-sizing: border-box; }
+      .cta a:hover, .cta a:focus { background: #094c40; }
+      .cta a:focus-visible { outline: 3px solid #0e6b59; outline-offset: 3px; }
+      .cta-note { text-align: center; color: #5d6b66; font-size: 14px; margin: 0 0 8px; }
+      .ar { direction: rtl; text-align: right; border-top: 1px solid #dfe5e1; margin-top: 40px; padding-top: 24px; }
+      .sitenav { border-top: 1px solid #dfe5e1; margin-top: 40px; padding-top: 20px; text-align: center; color: #5d6b66; font-size: 14px; }
+      .sitenav a { color: var(--brand); }
+      .sitenav .store { display: inline-block; background: var(--brand); color: #fff; text-decoration: none; font-weight: 600; padding: 12px 22px; border-radius: 10px; min-height: 44px; box-sizing: border-box; margin-bottom: 14px; }
+      .sitenav .store:hover, .sitenav .store:focus { background: #094c40; }
+      .sitenav .store:focus-visible { outline: 3px solid #0e6b59; outline-offset: 3px; }
+    </style>
+    <script type="application/ld+json">
+{
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Barakah",
+      "alternateName": "بركة",
+      "applicationCategory": "LifestyleApplication",
+      "operatingSystem": "iOS 15.0 or later",
+      "url": "https://apps.apple.com/app/id6782983180",
+      "installUrl": "https://apps.apple.com/app/id6782983180",
+      "description": "A private, Arabic-first iPhone app for prayer times, Qibla, the Hijri calendar, Zakat and adhkar, computed on your device. No account and no tracking.",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+      "author": { "@type": "Organization", "name": "Barakah", "url": "https://pixels512.github.io/barakah-legal/" }
+    }
+    </script>
+    <script type="application/ld+json">
+{
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Which calendar does this converter use?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Umm al-Qura calendar, the calculated Hijri calendar published in Saudi Arabia. The conversion runs in your browser with the same calculation the Barakah iPhone app uses on your device."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why can the Hijri date differ by a day from my local announcement?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Islamic months traditionally begin with the sighting of the new crescent moon, and local moon-sighting committees can announce a start one day before or after any calculated calendar, including Umm al-Qura. For dates of worship, follow your local authority; the Barakah app lets you nudge the displayed date by up to two days to match it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "When does Ramadan 1448 AH begin?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "According to the Umm al-Qura calendar, 1 Ramadan 1448 AH corresponds to 8 February 2027. The actual start of fasting follows the moon sighting announced where you live."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is anything sent to a server when I convert a date?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. The conversion is computed entirely in your browser on this static page — no account, no tracking, and the dates you enter are not sent anywhere."
+          }
+        }
+      ]
+    }
+    </script>
+  </head>
+  <body>
+    <h1>Hijri Date Today &amp; Hijri–Gregorian Converter</h1>
+
+    <div class="today">
+      <div class="hijri" id="hijri-today"><noscript>Enable JavaScript to see today's Hijri date.</noscript></div>
+      <div class="greg" id="greg-today"></div>
+    </div>
+
+    <h2>Gregorian → Hijri</h2>
+    <div class="tool">
+      <div class="row">
+        <div>
+          <label for="g-date">Gregorian date</label>
+          <input type="date" id="g-date" />
+        </div>
+        <button type="button" id="g2h-btn">Convert</button>
+      </div>
+      <div class="out" id="g2h-out"></div>
+    </div>
+
+    <h2>Hijri → Gregorian</h2>
+    <div class="tool">
+      <div class="row">
+        <div>
+          <label for="h-day">Day</label>
+          <input type="number" id="h-day" min="1" max="30" />
+        </div>
+        <div>
+          <label for="h-month">Month</label>
+          <select id="h-month"></select>
+        </div>
+        <div>
+          <label for="h-year">Year (AH)</label>
+          <input type="number" id="h-year" min="1300" max="1500" />
+        </div>
+        <button type="button" id="h2g-btn">Convert</button>
+      </div>
+      <div class="out" id="h2g-out"></div>
+    </div>
+
+    <p class="method">
+      <strong>Method.</strong> Dates are computed on the <strong>Umm al-Qura</strong> calendar — the
+      calculated Hijri calendar published in Saudi Arabia — in your browser, with the same
+      calculation the Barakah iPhone app runs on your device. A calculated calendar is a civil
+      reference: months of worship begin with the sighted crescent, so your local announcement can
+      differ by a day. Nothing you enter here is sent anywhere.
+    </p>
+
+    <h2>Frequently asked questions</h2>
+    <h3>Which calendar does this converter use?</h3>
+    <p>The Umm al-Qura calendar, the calculated Hijri calendar published in Saudi Arabia. The conversion runs in your browser with the same calculation the Barakah iPhone app uses on your device.</p>
+    <h3>Why can the Hijri date differ by a day from my local announcement?</h3>
+    <p>Islamic months traditionally begin with the sighting of the new crescent moon, and local moon-sighting committees can announce a start one day before or after any calculated calendar, including Umm al-Qura. For dates of worship, follow your local authority; the Barakah app lets you nudge the displayed date by up to two days to match it.</p>
+    <h3>When does Ramadan 1448 AH begin?</h3>
+    <p>According to the Umm al-Qura calendar, 1 Ramadan 1448 AH corresponds to 8 February 2027. The actual start of fasting follows the moon sighting announced where you live.</p>
+    <h3>Is anything sent to a server when I convert a date?</h3>
+    <p>No. The conversion is computed entirely in your browser on this static page — no account, no tracking, and the dates you enter are not sent anywhere.</p>
+
+    <h2>The Hijri calendar on your Home Screen</h2>
+    <p>The Barakah app shows today's Hijri date on your iPhone Home Screen and Apple Watch, converts dates both ways offline, and computes prayer times, the Qibla and Zakat — all on your device, with no account and no tracking.</p>
+    <div class="cta">
+      <a href="https://apps.apple.com/app/id6782983180">Download Barakah on the App Store</a>
+    </div>
+    <p class="cta-note">Free · iPhone and Apple Watch · No tracking, no account</p>
+
+    <div class="ar" lang="ar" dir="rtl">
+      <h2>التاريخ الهجري اليوم وتحويل التاريخ</h2>
+      <p>محوّل التاريخ الهجري والميلادي بتقويم أم القرى — يعمل في متصفحك بنفس الحساب الذي يستخدمه تطبيق بركة.</p>
+      <p class="cta-note"><a href="ar/hijri.html"><strong>النسخة العربية الكاملة من هذه الصفحة ←</strong></a></p>
+    </div>
+
+    <nav class="sitenav">
+      <a class="store" href="https://apps.apple.com/app/id6782983180">Download Barakah on the App Store</a>
+      <br />
+      <a href="./">Home</a> ·
+      <a href="hijri.html">Hijri Converter</a> ·
+      <a href="privacy.html">Privacy Policy</a> ·
+      <a href="terms.html">Terms of Use</a>
+      <p>© 2026 Barakah</p>
+    </nav>
+
+    <script src="assets/hijri-tool.js" defer></script>
+  </body>
+</html>
