@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>How ad funding shows up in prayer-app reviews — the data</title>
+    <meta name="description" content="An open dataset of 14,057 App Store reviews of five prayer apps across 12 storefronts, with the counting rules published so the figures can be checked." />
+    <link rel="canonical" href="https://pixels512.github.io/barakah-legal/data.html" />
+    <link rel="alternate" hreflang="en" href="https://pixels512.github.io/barakah-legal/data.html" />
+    <link rel="alternate" hreflang="ar" href="https://pixels512.github.io/barakah-legal/ar/data.html" />
+    <link rel="alternate" hreflang="x-default" href="https://pixels512.github.io/barakah-legal/data.html" />
+    <link rel="icon" href="icon.svg" type="image/svg+xml" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Barakah" />
+    <meta property="og:title" content="How ad funding shows up in prayer-app reviews — the data" />
+    <meta property="og:description" content="An open dataset of 14,057 App Store reviews of five prayer apps across 12 storefronts, with the counting rules published so the figures can be checked." />
+    <meta property="og:url" content="https://pixels512.github.io/barakah-legal/data.html" />
+    <meta property="og:image" content="https://pixels512.github.io/barakah-legal/og-barakah.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="The Barakah app icon beside the words Prayer times, Qibla and more" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="ar_SA" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <meta name="apple-itunes-app" content="app-id=6782983180" />
+    <style>
+      :root { --brand: #0b5d4e; }
+      body { font-family: system-ui, -apple-system, 'Segoe UI', sans-serif; max-width: 760px; margin: 0 auto; padding: 48px 20px 64px; color: #14201c; line-height: 1.6; }
+      header { text-align: center; margin-bottom: 32px; }
+      .logo { width: 96px; height: 96px; border-radius: 22px; }
+      h1 { color: var(--brand); margin: 12px 0 4px; }
+      .tag { color: #5d6b66; }
+      h2 { color: var(--brand); }
+      a { color: var(--brand); }
+      ul { padding-inline-start: 20px; }
+      .cta { display: flex; justify-content: center; margin: 28px 0 8px; }
+      .cta a {
+        display: inline-block; background: var(--brand); color: #fff; text-decoration: none;
+        font-size: 17px; font-weight: 600; padding: 14px 28px; border-radius: 12px;
+        min-height: 44px; box-sizing: border-box;
+      }
+      .cta a:hover, .cta a:focus { background: #094c40; }
+      .cta a:focus-visible { outline: 3px solid #0e6b59; outline-offset: 3px; }
+      .cta-note { text-align: center; color: #5d6b66; font-size: 14px; margin: 0 0 8px; }
+      .ar { direction: rtl; text-align: right; border-top: 1px solid #dfe5e1; margin-top: 40px; padding-top: 24px; }
+      footer { margin-top: 40px; color: #5d6b66; font-size: 14px; text-align: center; }
+    </style>
+    <script type="application/ld+json">
+{
+      "@context": "https://schema.org",
+      "@type": "Dataset",
+      "name": "How ad funding shows up in prayer-app reviews — the data",
+      "description": "An open dataset of 14,057 App Store reviews of five prayer apps across 12 storefronts, with the counting rules published so the figures can be checked.",
+      "url": "https://pixels512.github.io/barakah-legal/data.html",
+      "inLanguage": "en",
+      "creator": {
+            "@type": "Organization",
+            "name": "Barakah",
+            "url": "https://pixels512.github.io/barakah-legal/"
+      },
+      "distribution": {
+            "@type": "DataDownload",
+            "encodingFormat": "application/json",
+            "contentUrl": "https://pixels512.github.io/barakah-legal/review-data.json"
+      }
+}
+    </script>
+  </head>
+  <body>
+    <h1>How ad funding shows up in prayer-app reviews</h1>
+    <p class="tag">An open dataset, with the counting rules published so you can argue with them</p>
+
+    <p>
+      We read the public App Store reviews of five widely-used prayer apps —
+      <strong>14,057</strong> reviews across
+      <strong>12</strong> storefronts, pulled 2026-08-13. Most people rate
+      these apps highly. Among the <strong>1,985</strong>
+      reviews rated one or two stars, <strong>867</strong>
+      mention adverts or paywalls.
+    </p>
+    <p>
+      We publish this because we make a competing app and we would rather be argued with than
+      believed. The raw aggregates are in <a href="review-data.json">review-data.json</a>.
+    </p>
+
+    <h2>Per app</h2>
+    <p>
+      Apps are anonymised as A–E: the finding is about how ad funding behaves, not about naming
+      rivals. This is also the most important row of the whole dataset — the pattern is
+      <strong>concentrated</strong>, not universal.
+    </p>
+    <table>
+      <tr><th>App</th><th>Reviews</th><th>1–2★</th><th>Mention ads</th><th>Share of 1–2★</th></tr>
+      <tr><td>App A</td><td>5,552</td><td>1,223</td><td>618</td><td>51%</td></tr>
+      <tr><td>App B</td><td>3,322</td><td>378</td><td>187</td><td>49%</td></tr>
+      <tr><td>App C</td><td>803</td><td>98</td><td>61</td><td>62%</td></tr>
+      <tr><td>App D</td><td>3,496</td><td>233</td><td>0</td><td>0%</td></tr>
+      <tr><td>App E</td><td>884</td><td>53</td><td>1</td><td>2%</td></tr>
+    </table>
+
+    <h2>Compared with every other complaint theme</h2>
+    <p>
+      Eleven themes, chosen before any counts were seen. Themes overlap — one review can raise
+      several — so these do not sum to 100%. The last column counts reviews raising the theme
+      <em>without</em> also raising adverts, because a crash complaint inside an advert complaint is
+      not an independent rival to it.
+    </p>
+    <table>
+      <tr><th>Theme</th><th>Reviews</th><th>% of 1–2★</th><th>Excluding ads reviews</th></tr>
+      <tr><td>Adverts or paywalls</td><td>867</td><td>43.7%</td><td>—</td></tr>
+      <tr><td>Subscription or price</td><td>217</td><td>10.9%</td><td>115</td></tr>
+      <tr><td>Updates or interface</td><td>161</td><td>8.1%</td><td>133</td></tr>
+      <tr><td>Notifications or adhan</td><td>150</td><td>7.6%</td><td>104</td></tr>
+      <tr><td>Crashes or bugs</td><td>95</td><td>4.8%</td><td>79</td></tr>
+      <tr><td>Location or Qibla</td><td>75</td><td>3.8%</td><td>42</td></tr>
+      <tr><td>Privacy or data</td><td>36</td><td>1.8%</td><td>23</td></tr>
+      <tr><td>Prayer-time accuracy</td><td>31</td><td>1.6%</td><td>28</td></tr>
+      <tr><td>Account or login</td><td>27</td><td>1.4%</td><td>19</td></tr>
+      <tr><td>Language or translation</td><td>17</td><td>0.9%</td><td>14</td></tr>
+      <tr><td>Battery or performance</td><td>15</td><td>0.8%</td><td>8</td></tr>
+    </table>
+    <p>
+      Adverts: <strong>867</strong>. Nearest independent rival:
+      <strong>133</strong>
+      (Updates or interface), a ratio of
+      0.153. We fixed the threshold for "comes close" at 0.5
+      <em>before</em> counting, so the comparison could have gone against us.
+    </p>
+
+    <h2>Method</h2>
+    <ul>
+      <li><strong>Source.</strong> Apple public customer-review RSS feed (itunes.apple.com/{country}/rss/customerreviews)</li>
+      <li><strong>Storefronts.</strong> AE, CA, DZ, EG, FR, GB, ID, MA, MY, PK, SA, US. A storefront is a country, not a city.</li>
+      <li><strong>Advertising rule.</strong> <code>/\bads\b|\bad\b|advertis|paywall|اعلانات|إعلانات|too many ad/i</code></li>
+      <li><strong>Population cap.</strong> Apple returns recent reviews first and caps at roughly 10 pages per storefront per app. This is a recent-weighted retrievable sample, not a census.</li>
+    </ul>
+
+    <h2>What this dataset does not show</h2>
+    <p>
+      A keyword match is evidence that a review <em>raises</em> a topic — not proof the topic caused
+      the rating. The percentages are of <em>unhappy</em> reviews, not of all users. Apple's feed is
+      recency-weighted and capped, so this is a retrievable sample rather than a representative
+      survey. And the five apps are ones we selected as close competitors: this is not a usage
+      ranking. You can re-do every division here and check each rule against the text we describe;
+      you cannot re-run the count from scratch, because the apps are anonymised and Apple's feed
+      returns different reviews as time passes.
+    </p>
+
+    <h2>Reuse</h2>
+    <p>
+      Please do. Cite it as <em>Barakah, "How ad funding shows up in prayer-app reviews — the data", 2026-08-13</em> and link this
+      page. If you find an error, <a href="mailto:suasion.78.hymn@icloud.com">tell us</a> and we will correct it here.
+    </p>
+
+    <div class="cta">
+      <a href="https://apps.apple.com/app/id6782983180">Download Barakah on the App Store</a>
+    </div>
+    <p class="cta-note">Free · No ads, no subscription, no account, no tracking</p>
+    <p><a href="no-ads.html">Why Barakah has no ads</a> · <a href="index.html">Home</a> · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a></p>
+    <nav class="sitenav">
+      <a class="store" href="https://apps.apple.com/app/id6782983180">Download Barakah on the App Store</a>
+      <br />
+      <a href="index.html">Home</a> ·
+      <a href="no-ads.html">Why no ads</a> ·
+      <a href="data.html">The data</a> ·
+      <a href="privacy.html">Privacy Policy</a> ·
+      <a href="terms.html">Terms of Use</a>
+      <p><a href="ar/data.html">العربية</a> · © 2026 Barakah</p>
+    </nav>
+  </body>
+</html>
