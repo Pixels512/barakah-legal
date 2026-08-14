@@ -105,65 +105,53 @@
       behind a subscription, you are not imagining it and you are not alone.
     </p>
 
-    <h2>What the reviews actually say</h2>
+    <h2>Why an ad-funded prayer app cannot promise you this</h2>
     <p>
-      We read the public App Store reviews of five widely-used prayer apps — <strong>14,057
-      reviews</strong> across <strong>12 storefronts</strong>, pulled in August 2026. Most people
-      rate these apps highly. But among the <strong>1,985</strong> reviews rated one or two stars,
-      <strong>867 — about 44% — mention adverts or paywalls.</strong> No other topic in those
-      unhappy reviews comes close: the nearest one that stands on its own is the app's interface
-      and updates, raised by <strong>133</strong>. They arrive from storefronts across the Gulf,
-      South Asia, Europe and North America alike.
+      This is not really a claim about other apps. It is a claim about how advertising works. When an
+      app is paid for by an ad network, the app does not choose what appears on your screen — the
+      network does, in real time, after the page has already opened. The developer does not see it
+      first and cannot see it afterwards.
+    </p>
+    <p>
+      That is why "we will keep the ads tasteful" is not a promise anyone can keep. It is not a
+      question of care or of taste. An app with an ad network attached has handed the decision to
+      something else; an app with nothing plugged in cannot show you something you would be ashamed
+      of, because there is no mechanism by which it could.
+    </p>
+    <p>
+      The same is true of tracking. Advertising is targeted, targeting needs data, and data about
+      when and where a person prays is about as intimate as app data gets. Removing the advertising
+      removes the reason to collect it.
     </p>
 
-    <div class="method">
-      <strong>How we counted, and what this does not say.</strong> Apple publishes a customer-review
-      feed for every app. We pulled it in August 2026 for five prayer apps across 12 storefronts,
-      kept the reviews rated 1–2 stars, and counted how many <em>mention</em> adverts or paywalls,
-      in English or Arabic.
-      <br /><br />
-      <strong>The honest limits of that.</strong> Counting a mention is not the same as proving a
-      cause — we can say these reviews raise ads, not that ads are the sole reason each person was
-      unhappy. The 44% is of the <em>unhappy</em> reviews, not of all users: 1–2 star reviews are
-      about 14% of the sample, so this is roughly 6% of everything we read. Apple's feed returns
-      recent reviews first and caps at about 10 pages per storefront, so this is a recent-weighted
-      retrievable sample, not a representative survey; the median matched review is from late 2025,
-      and 783 of the 867 fall within two years. A storefront is a country, not a city. And these are
-      five apps we selected as close competitors — we are not claiming a usage ranking.
-      <br /><br />
-      <strong>"No other topic comes close" is a count, not an impression.</strong> We counted eleven
-      complaint themes — chosen before we saw any results — across the same 1,985 reviews: adverts,
-      price, notifications, crashes, prayer-time accuracy, Qibla and location, interface changes,
-      accounts, battery, privacy and language. Themes overlap, so we also counted each one
-      <em>excluding</em> reviews that already mention adverts, because a crash complaint inside an
-      advert complaint is not a rival to it. Adverts: 867. Nearest independent rival: 133. Every
-      theme, its count and its exact matching rule are in the data file below.
-      <br /><br />
-      <strong>And it is not evenly spread, which matters.</strong> Two of the five apps we looked at
-      have almost no advertising complaints at all — one has none. The pattern is concentrated in the
-      apps that carry advertising, which is the point rather than a caveat to it. The full per-app
-      breakdown, the topic table, the exact counting rules and the storefront list are published as
-      <a href="data.html">a full methodology page</a> and as raw
-      <a href="review-data.json">review-data.json</a>. To be precise about what that lets you do:
-      you can re-do every division we report and check each rule against the text we describe, but
-      you cannot re-run the count from scratch, because we anonymise the apps and Apple's feed
-      returns different reviews as time passes. Competitors are App A–E there: the finding is about
-      how ad funding behaves, not about naming rivals.
-    </div>
-
-    <h2>The part that isn't about money</h2>
+    <h2>What we can actually show you</h2>
     <p>
-      <strong>73 of those unhappy reviews</strong> go further than saying ads are annoying. They
-      name what the ads showed them — gambling, music, immodest images — next to the Qur'an. People
-      wrote that they had become wary of opening a prayer app in the masjid because they could not
-      predict what would appear on screen.
+      Anyone can say they have no ads. Here is what stands behind it, all of which you can check
+      without taking our word:
     </p>
-    <p>
-      That is not a bug any of those apps can simply fix while advertising pays for them: an ad
-      network decides what appears, and the app does not see it first. An app with no ad network
-      attached cannot show you something you would be ashamed of, because there is nothing plugged
-      in that could choose for you.
-    </p>
+    <ul>
+      <li>
+        <strong>It is written into the terms.</strong> Not a description of the current version — a
+        binding commitment, including that any change would be published here and in the App Store
+        release notes <em>before</em> a release that carried it.
+        <a href="terms.html#no-advertising">Read the clause</a>.
+      </li>
+      <li>
+        <strong>There is no advertising SDK in the app.</strong> Nothing to configure, nothing to
+        switch on later without shipping a visibly different build.
+      </li>
+      <li>
+        <strong>The core of the app never contacts a network at all.</strong> Prayer times, Qibla,
+        the Hijri calendar, Zakat and adhkar are computed on your device. Every case where something
+        does leave your device is listed, exhaustively, in the
+        <a href="privacy.html">privacy policy</a> — and each one happens only because you asked for
+        it.
+      </li>
+      <li>
+        <strong>There is no account.</strong> There is nothing to log into, so there is no profile
+        to attach anything to.
+      </li>
+    </ul>
 
     <h2>What Barakah does instead</h2>
     <table>
@@ -195,18 +183,14 @@
       <h2>تطبيق مواقيت صلاة بلا إعلانات ولا تتبّع</h2>
       <p>
         إن كنت هنا لأن تطبيقًا إسلاميًا وثقت به امتلأ بالإعلانات، أو وضع القرآن خلف اشتراك مدفوع،
-        فأنت لست وحدك. قرأنا ١٤٬٠٥٧ مراجعة عامة في App Store لخمسة تطبيقات صلاة واسعة الانتشار عبر
-        ١٢ متجرًا، سُحبت في أغسطس ٢٠٢٦. أغلب الناس يقيّمون هذه التطبيقات تقييمًا عاليًا، لكن من بين
-        ١٬٩٨٥ مراجعة بتقييم نجمة أو نجمتين، هناك ٨٦٧ — نحو ٤٤٪ — تذكر الإعلانات أو الاشتراكات
-        المدفوعة. وللدقّة: هذه نسبة من المراجعات الغاضبة وحدها لا من كل المستخدمين (وهي تمثّل نحو
-        ١٤٪ من العيّنة)، وذِكر الإعلان في مراجعة لا يُثبت وحده أنه السبب الوحيد للاستياء.
+        فأنت لست وحدك. والمسألة في جوهرها وصفٌ لكيفية عمل الإعلانات: التطبيق المموَّل بشبكة إعلانية
+        لا يختار ما يظهر على شاشتك، بل الشبكة تختار لحظيًّا بعد فتح الصفحة، فلا يراه المطوّر قبله
+        ولا بعده.
       </p>
       <p>
-        و٧٣ من تلك المراجعات تذهب أبعد من الشكوى من كثرة الإعلانات: تصف ما عُرض عليها — ميسر
-        وموسيقى وصور غير محتشمة — بجوار القرآن. وكتب بعضهم أنه صار يتحرّج من فتح تطبيق الصلاة في
-        المسجد لأنه لا يعرف ما قد يظهر على الشاشة. وهذا ليس عيبًا يسهل إصلاحه ما دام الإعلان هو ما
-        يموّل التطبيق، إذ إن شبكة الإعلانات هي التي تختار ما يُعرض. أمّا التطبيق الذي لا شبكة
-        إعلانات فيه أصلًا فلا يمكن أن يعرض ما تستحي منه، ببساطة لأنه لا يوجد فيه ما يختار لك.
+        ولهذا فإن «سنُبقي الإعلانات محتشمة» وعدٌ لا يستطيع أحد الوفاء به. ومن لم يركّب شبكة إعلانات
+        أصلًا فلا يملك آليةً تعرض عليك ما تستحيي منه بين يدي الصلاة. والأمر نفسه في التتبّع: الإعلان
+        موجَّه، والتوجيه يحتاج بيانات، وبيانات عن وقت صلاتك ومكانها من أشدّ ما يكون خصوصية.
       </p>
       <p>
         بركة بلا إعلانات، وبلا اشتراك، وبلا حساب، وبلا تتبّع. كل الحسابات تجري على جهازك، ولا نملك
@@ -222,7 +206,7 @@
     </div>
 
     <footer>
-      <a href="index.html">Barakah</a> · <a href="privacy.html">Privacy Policy</a> ·
+      <a href="./">Barakah</a> · <a href="privacy.html">Privacy Policy</a> ·
       <a href="terms.html">Terms of Use</a><br />© 2026 Barakah
     </footer>
   </body>
